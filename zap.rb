@@ -5,21 +5,21 @@
 class Zap < Formula
   desc ""
   homepage "https://github.com/sudonym-btc/zap"
-  version "0.0.3"
+  version "0.0.4"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sudonym-btc/zap/releases/download/v0.0.3/zap_Darwin_arm64.tar.gz"
-      sha256 "e8346c09fb325c566a95d8f6b9cdb92a86899db05e2d112d818dee6dfe763fba"
+      url "https://github.com/sudonym-btc/zap/releases/download/v0.0.4/zap_Darwin_arm64.tar.gz"
+      sha256 "a54c50fe18121b54ca5e47d601ffdbecafba81b79092bfdecf9316a2cc27f828"
 
       def install
         bin.install "zap"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sudonym-btc/zap/releases/download/v0.0.3/zap_Darwin_x86_64.tar.gz"
-      sha256 "c5d064c1eaadce7917c48a9725238e22075b9f01ad9af62e968a4d1a2818e105"
+      url "https://github.com/sudonym-btc/zap/releases/download/v0.0.4/zap_Darwin_x86_64.tar.gz"
+      sha256 "406c1e6d150dad29d9395e4c7a94eac937f5983f9e5cb301e9ec335d15ceb77e"
 
       def install
         bin.install "zap"
